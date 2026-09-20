@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Laila Rezky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Menu Bar -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo-text">Laila Rezky.</a>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="contact-header">
+            <h1>Hubungi Saya</h1>
+            <p class="subtitle">Silakan isi formulir di bawah ini untuk berdiskusi atau berkolaborasi.</p>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Form Card  -->
+        <section class="contact-card">
+            <form class="contact-form">
+                
+                <!-- Nama Lengkap -->
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <!-- Alamat Email -->
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                </div>
+
+                <!-- Kategori / Keperluan -->
+                <div class="form-group">
+                    <label for="kategori">Kategori / Keperluan</label>
+                    <select id="kategori" name="kategori" required>
+                        <option value="" disabled selected>-- Pilih Keperluan --</option>
+                        <option value="konsultasi">Konsultasi</option>
+                        <option value="kolaborasi">Kolaborasi Proyek</option>
+                        <option value="pertanyaan">Pertanyaan Umum</option>
+                    </select>
+                </div>
+
+                <!-- Pesan -->
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan kamu di sini..." required></textarea>
+                </div>
+
+                <!-- Tombol Submit -->
+                <button type="submit" class="btn btn-dark btn-submit">Kirim Pesan</button>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Laila Rezky</p>
+        </div>
+    </footer>
+
+</body>
+</html>

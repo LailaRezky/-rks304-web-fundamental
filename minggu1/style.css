@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #faf5ff; 
+  color: #3b0764; 
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+/* Header & Navbar */
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #f3e8ff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+/* Teks Logo Kiri Atas (Pink Soft) */
+.logo-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ec4899; 
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7e22ce; 
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover, nav a.active {
+  color: #ec4899; 
+  font-weight: 700;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 3.5rem 0;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .hero-section {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.hero-image img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 20px rgba(192, 132, 252, 0.25); 
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #3b0764; /* Ungu  */
+  letter-spacing: -0.02em;
+}
+
+.hero-text .role {
+  font-size: 1.05rem;
+  color: #ec4899; /* untuk subtitle */
+  font-weight: 600;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text .bio-about {
+  font-size: 0.95rem;
+  color: #581c87;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+/* Tombol Imut (Kombinasi Pink & Ungu Lilac) */
+.btn-group {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.3rem;
+  border-radius: 20px; /* Bikin tombol bulat memanjang yang cantik */
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Tombol Utama (Pink Soft) */
+.btn-dark {
+  background-color: #f472b6;
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #ec4899;
+}
+
+/* Tombol Kedua (Ungu Lilac Muda) */
+.btn-outline {
+  border: 2px solid #e9d5ff;
+  color: #9333ea; /* Teks ungu Lilac */
+  background-color: #f3e8ff;
+}
+
+.btn-outline:hover {
+  background-color: #e9d5ff;
+}
+
+/* Garis Pemisah Tipis Putus-putus Lilac */
+.divider {
+  border: 0;
+  border-top: 2px dashed #f472b6; 
+  margin: 3rem 0 2rem 0;
+  opacity: 0.6; 
+}
+
+/* Section Skills */
+.skills-section h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #3b0764;
+  margin-bottom: 0.75rem;
+}
+
+.skills-list {
+  padding-left: 1.2rem;
+  color: #581c87;
+  font-size: 0.925rem;
+}
+
+.skills-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #a855f7;
+}
+/* Styling Grid Kotak (About & Skill) */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Styling Setiap Kartu / Kotak */
+.info-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 2px solid #f3e8ff;
+  box-shadow: 0 4px 12px rgba(192, 132, 252, 0.08);
+  transition: all 0.2s ease;
+}
+
+.info-card:hover {
+  border-color: #f472b6;
+  box-shadow: 0 6px 16px rgba(236, 72, 153, 0.12);
+}
+
+.info-card h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #3b0764;
+  margin-bottom: 0.75rem;
+}
+
+.info-card p {
+  font-size: 0.925rem;
+  color: #581c87;
+  line-height: 1.6;
+}
+
+.info-card .skills-list {
+  padding-left: 1.2rem;
+  color: #581c87;
+  font-size: 0.925rem;
+  line-height: 1.8;
+}
+/* Portfolio Grid & Card Styling */
+.portfolio-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3b0764;
+}
+
+.portfolio-header .subtitle {
+  color: #7e22ce;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 2px solid #f3e8ff;
+  box-shadow: 0 4px 12px rgba(192, 132, 252, 0.08);
+  overflow: hidden; /* Biar gambar ikut melengkung di sudut atas */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.15);
+  border-color: #f472b6;
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 2px solid #f3e8ff;
+}
+
+.card-body {
+  padding: 1.2rem;
+}
+
+.project-card h3 {
+  font-size: 1.05rem;
+  color: #3b0764;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  font-size: 0.85rem;
+  color: #581c87;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  background-color: #f3e8ff;
+  color: #9333ea;
+  font-size: 0.725rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+}
+/* Contact css */
+.contact-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3b0764;
+  margin-top: 2rem;
+}
+
+.contact-header .subtitle {
+  color: #7e22ce;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  padding: 1.8rem;
+  border-radius: 16px;
+  border: 2px solid #f3e8ff;
+  box-shadow: 0 4px 12px rgba(192, 132, 252, 0.08);
+  max-width: 550px;
+  margin: 1.5rem auto 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #3b0764;
+}
+
+/* Styling Input, Dropdown (Select), dan Textarea */
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  border: 1.5px solid #f3e8ff;
+  background-color: #faf5ff;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: #3b0764;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+  border-color: #f472b6;
+  background-color: #ffffff;
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
